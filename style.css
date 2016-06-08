@@ -46,8 +46,6 @@ input{
 	font-size: 1em;
 	height: 36px;
 	padding: 0px 6px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 input:focus{
@@ -58,13 +56,16 @@ input:focus{
 
 button{
 	color: #EEE;
-	font-weight: bold;
-	width: 42px;
 	height: 42px;
-	background: #4387FD url("./img/search.png") no-repeat scroll center center;
 	border: 1px solid #4285F4;
-	display: inline-block;
-	vertical-align: middle;
+	font-weight: bold;
+	/*background: transparent linear-gradient(#4387FD, #4683EA) repeat scroll 0% 0%;*/
+	background: #4387FD url("./img/search.png") no-repeat center;
+	border-radius: 0px 2px 2px 0px;
+	width: 42px;
+	position: relative;
+	bottom: 5px;
+	right: 5px;
 }
 .menu{
 	border-bottom: solid 1px #ebebeb;
@@ -72,7 +73,7 @@ button{
 }
 .menu li{
 	display: inline-block;
-		-moz-transition-property:color,font-size;
+		-moz-transition-property: color,font-size;
 	    transition-duration: 0.1s;
 
 }
@@ -95,7 +96,6 @@ button{
 	display: block;
 	padding: 0 10px;
 	height: 2.4em;
-	border-bottom: solid 3px rgba(0, 0, 0, 0);
 }
 
 .blue{
@@ -108,10 +108,6 @@ button{
 
 .oak{
 	color: #FBBC05;
-}
-
-.green{
-	color: #34A853;
 }
 
 .container{
@@ -168,9 +164,7 @@ a.contenu_titre:hover{
 	list-style:none;
 	padding: 0;
 	margin: 0;
-	/*height: 224px;*/
-    /*display: inline-block;*/
-    /*width: 100%;*/
+	height: 224px;
 }
 
 .fotos_et_info li+li{
@@ -183,40 +177,20 @@ a.contenu_titre:hover{
 }
 
 .fotos_et_info h1{
- 	margin: 0;
+ 	margin:0;
 	font-weight: 400;
 }
 
-.fotos_colome li:nth-child(1) img{
+.fotos_et_info img{
  	margin:0;
- 	width: 150px;
-    float: left;
+ 	width: 160px;
 }
 
-/*.fotos_colome li:not:first-child{
- 	display: inline-block;
-}
-*/
-
-.fotos_colome li:nth-child(n+2){
- 	margin:0;
-    padding: 0;
-    /*vertical-align: top;*/
-    display: inline-block;
-    width: 28%;
-}
-
-/*.fotos_colome li:nth-child(n+2) img{
- 	margin:0;
-    padding: 0;
-    vertical-align: top;
-}*/
-
-/*.fotos_et_info ul li{
+.fotos_et_info ul li{
  	padding: 0;
  	margin: 0;
  	display: inline-block;
-}*/
+}
 
 .fotos_et_info a{
  	color: #1A0DAB;
